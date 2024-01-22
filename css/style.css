@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". circle ." ;
+}
+
+.circle {
+    grid-area: circle;
+    height: 100vh;
+    width: 100vh;
+    border-radius: 100%;
+    background: rgb(226, 201, 60);
+}
