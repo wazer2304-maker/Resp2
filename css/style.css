@@ -1,18 +1,18 @@
-body {
+body { /*Inget i bodyn inheritar en margin eller padding från standarden, body får ingen margin eller padding*/
     margin: 0;
     padding: 0;
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;
-    background: lightblue;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: ". circle ." ;
+    width: 100vw; /*Tar upp hela bredden av skärmen*/
+    height: 100vh; /*Tar upp hela höjden av skärmen*/
+    background: lightblue; /*Bakgrundsfärgen är ljusblå*/
+    display: grid; /*Använder grid för att centrera cirkeln*/
+    grid-template-columns: 1fr 1fr 1fr; /*Centrerar*/
+    grid-template-areas: ". circle ." ; /*Centrerar cirkeln*/
 }
 
-.circle {
+.circle { /*Cirkeln, i arean circle (centern) får samma höjd & bredd, 100vh, den är 100% rund och backrunden är gul*/
     grid-area: circle;
     height: 100vh;
     width: 100vh;
